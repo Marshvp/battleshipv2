@@ -7,7 +7,7 @@
 // Gameboards should be able to report whether or not all of their ships have been sunk.
 
 import Ship from "./shipClass";
-class GameBoard {
+export default class GameBoard {
     constructor() {
         this.ships = [];
         this.size = 10;
@@ -71,4 +71,3 @@ class GameBoard {
         return this.ships.every(ship => ship.isSunk())
     }
 }
-export { GameBoard }
