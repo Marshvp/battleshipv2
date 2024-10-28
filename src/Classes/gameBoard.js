@@ -54,7 +54,7 @@ export default class GameBoard {
                     console.log("ship hit");
                     if(this.allSunk()){
                         console.log("Game Over");
-                        
+                        alert('Game Over')
                     }
                 return "hit"           
                 }

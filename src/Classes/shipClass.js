@@ -1,8 +1,7 @@
 // Your ‘ships’ will be objects that include their length, the number of times they’ve been hit and whether or not they’ve been sunk.
 
 export default class Ship {
-    constructor(id, length){
-        this.id = id;
+    constructor(length){
         this.length = length;
         this.hits = 0;
         this.positions = []
@@ -14,6 +13,6 @@ export default class Ship {
     }
 
     isSunk() {
-        return this.hits == this.length 
+        return this.hits >= this.length 
     }
 }
