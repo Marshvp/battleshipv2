@@ -20,8 +20,6 @@ export default function buildGrids(playerID, handleAttack){
 
             cell.addEventListener('click', () =>{
                 handleAttack(playerName, x, y)
-                console.log(`playerName was attacked at ${x},${y}`);
-                
             })
             gameboard.appendChild(cell)
         }

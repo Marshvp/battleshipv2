@@ -60,9 +60,15 @@ export default class GameBoard {
                 }
             }
         } else {
-            this.missedAttack.add(coord)
-            console.log("miss");
-            return "miss"
+            if (!this.missedAttack.has(coord)){
+                this.missedAttack.add(coord)
+                console.log("miss");
+                console.log(this.missedAttack);
+                return "miss"
+            } else {
+                console.log("You have already hit this one");
+                return "again"
+            }
             
         }
     }

@@ -11,3 +11,14 @@
     border: 1px solid #000;
     cursor: pointer;
 }
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+}

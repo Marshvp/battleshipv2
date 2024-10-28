@@ -2,7 +2,6 @@ import GameBoard from "../Classes/gameBoard";
 import buildGrids from "./grid";
 
 export default function initGame(handleAttack) {
-    const container = document.getElementById('container');
     const player1Div = document.getElementById('player1');
     const player2Div = document.getElementById('player2');
 
