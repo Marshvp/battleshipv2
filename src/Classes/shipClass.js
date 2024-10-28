@@ -4,22 +4,16 @@ export default class Ship {
     constructor(id, length){
         this.id = id;
         this.length = length;
-        this.hit = 0;
+        this.hits = 0;
         this.positions = []
     }
 
-    hit() {
-        this.hit++
-        return this.hit
+    recordHit() {
+        this.hits++
+        return this.hits
     }
 
     isSunk() {
-        if (this.hit == this.length) {
-            // ship is sunk
-            return true
-        }
-        else {
-            return false
-        }
+        return this.hits == this.length 
     }
 }

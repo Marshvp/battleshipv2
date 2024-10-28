@@ -1,0 +1,519 @@
+
+> battleship@1.0.0 test
+> jest
+
+FAIL tests/shipClass.test.js
+  ● Test suite failed to run
+
+    Cannot find module '../src/Classes/ship' from 'tests/shipClass.test.js'
+
+      3 |  */
+      4 |
+    > 5 | import Ship from '../src/Classes/ship';
+        | ^
+      6 |
+      7 | describe('Ship', () => {
+      8 |   let ship;
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (tests/shipClass.test.js:5:1)
+
+PASS tests/handleAttack.test.js
+  ● Console
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      Cannot attack your own board.
+
+      at log (src/index.js:17:17)
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      again
+
+      at log (src/index.js:36:17)
+
+    console.log
+      attacking player {
+        name: 'player1',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player2',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+    console.log
+      attacking player {
+        name: 'player2',
+        turn: true,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:11:13)
+
+    console.log
+      defending player {
+        name: 'player1',
+        turn: false,
+        board: {
+          receiveAttack: [Function: mockConstructor] {
+            _isMockFunction: true,
+            getMockImplementation: [Function (anonymous)],
+            mock: [Getter/Setter],
+            mockClear: [Function (anonymous)],
+            mockReset: [Function (anonymous)],
+            mockRestore: [Function (anonymous)],
+            mockReturnValueOnce: [Function (anonymous)],
+            mockResolvedValueOnce: [Function (anonymous)],
+            mockRejectedValueOnce: [Function (anonymous)],
+            mockReturnValue: [Function (anonymous)],
+            mockResolvedValue: [Function (anonymous)],
+            mockRejectedValue: [Function (anonymous)],
+            mockImplementationOnce: [Function (anonymous)],
+            withImplementation: [Function: bound withImplementation],
+            mockImplementation: [Function (anonymous)],
+            mockReturnThis: [Function (anonymous)],
+            mockName: [Function (anonymous)],
+            getMockName: [Function (anonymous)]
+          }
+        }
+      }
+
+      at log (src/index.js:13:13)
+
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        4.191 s
+Ran all test suites.

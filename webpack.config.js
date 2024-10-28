@@ -31,6 +31,13 @@ module.exports = {
                 test:/\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.js$/,           // Apply this rule to .js files
+                exclude: /node_modules/, // Don't transpile node_modules
+                use: {
+                loader: 'babel-loader' // Use babel-loader to transpile files
+                }
+            },
         ],
 },
 };

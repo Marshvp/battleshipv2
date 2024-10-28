@@ -50,7 +50,7 @@ export default class GameBoard {
         if(this.occupiedPositions.has(coord)){
             for (const ship of this.ships){
                 if(ship.positions.includes(coord)){
-                    ship.hit();
+                    ship.recordHit();
                     console.log("ship hit");
                     if(this.allSunk()){
                         console.log("Game Over");
