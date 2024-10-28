@@ -4,36 +4,55 @@ console.log("Hello, World")
 
 
 let game
-let turn = 0
 
-function handleAttack(playerID, x, y) {
-    console.log(`Attack on ${playerID} at position (${x}, ${y})`);
+function handleAttack(x, y, cell) {
     const combatLogUL = document.getElementById('combatLog')
     const combatLogLI = document.createElement('li')
 
 
 
-    const gameboardInstance = playerID === 'player1' ? game.player1Board : game.player2Board;
+    // checking if it is player 1's turn. if so player 1 attacks, else player 2 is attacking
+    const attackingPlayer = game.player1Instance.turn ? game.player1Instance : game.player2Instance
+    console.log('attacking player',attackingPlayer);
+    
+    const defendingPlayer = game.player1Instance.turn ? game.player2Instance : game.player1Instance
+
+    console.log('defending player',defendingPlayer);
+
+
+    if (cell.dataset.player === attackingPlayer.name) {
+        console.log("Cannot attack your own board.");
+        return;
+    }
+
+
+
+
+    const gameboardInstance = defendingPlayer.board
     const result = gameboardInstance.receiveAttack(x, y);
 
-    let cell
-    if(playerID === 'player1'){
-        cell = document.getElementById(`A ${x}-${y}`)
-    } else {
-        cell = document.getElementById(`B ${x}-${y}`)
-    }
+    const cellId = `${defendingPlayer.name}-${x}-${y}`
+    
+
+    const targetCell = document.getElementById(cellId)
 
     if (result === 'hit') {
-        cell.classList.add('hit');
-        combatLogLI.textContent = `Hit at ${x}-${y} by ${playerID}`;
+        targetCell.classList.add('hit');
+        combatLogLI.textContent = `Hit at ${x}-${y} by ${attackingPlayer.name}`;
+
+        attackingPlayer.turn = false
+        defendingPlayer.turn = true
     }
     if (result === 'miss') {
-        cell.classList.add('miss');
-        combatLogLI.innerHTML = `Miss at ${x}-${y} by ${playerID}`
+        targetCell.classList.add('miss');
+        combatLogLI.innerHTML = `Miss at ${x}-${y} by ${attackingPlayer.name}`
+        
+        attackingPlayer.turn = false
+        defendingPlayer.turn = true
+
     }
     if (result === 'again') {
-        console.log(agin);
-        
+        console.log('again');
         return
     }
 

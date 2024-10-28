@@ -12,14 +12,11 @@ export default function buildGrids(playerID, handleAttack){
         for (let x = 0; x < size; x++){
             const cell = document.createElement('div')
             cell.classList = 'cell'
-            if(playerID === 'player1'){
-                cell.id = `A ${x}-${y}`
-            } else {
-                cell.id = `B ${x}-${y}`
-            }
+            cell.id = `${playerID}-${x}-${y}`
+            cell.dataset.player = playerID
 
             cell.addEventListener('click', () =>{
-                handleAttack(playerName, x, y)
+                handleAttack(x, y, cell)
             })
             gameboard.appendChild(cell)
         }
