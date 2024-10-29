@@ -28,10 +28,13 @@ export default class GameBoard {
 
             
             if(this.occupiedPositions.has(coord)){
-                console.log("Error in occupied Possitions");
+                console.log("Error in occupied Possitions", coord);
                 return false
             } else {
+                
                 positions.push(coord)
+                console.log('placing:', coord);
+                
             }
         }
 

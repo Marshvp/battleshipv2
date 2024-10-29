@@ -30,3 +30,7 @@ li {
 .hit {
     background-color: red;
 }
+
+.ship-cell {
+    background-color: #a8af4c; /* Ship color for Player 1's ships */
+}
